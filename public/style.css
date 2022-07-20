@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;500;600;700;800;900&family=Righteous&display=swap');
+ * {
+    box-sizing: border-box;
+ }
+body {
+    background-color: #FB6B6B;
+    font-family: 'Righteous';
+}
+
+.screen1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Recursive', sans-serif;
+}
+
+.screen1 img {
+    width: 35%;
+}
+
+h1, .screen2 span {
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    font-weight: 400;
+}
+.play {
+    background-color:#FFFFFF; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: 1px solid #D70900;
+    width: 60%;
+    color: #D70900;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.screen2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Recursive', sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 5%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.head img {
+    margin-right: 4%;
+}
+
+.counterControl {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.counterControl span {
+    font-size: 18px;
+    font-family: 'Recursive';
+    color: #333333;
+    font-weight: 400;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-family: 'Recursive', sans-serif;
+    color: #333333;
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+ion-icon {
+    font-size: 30px;
+}
+.escondido {
+    display: none;
+}
