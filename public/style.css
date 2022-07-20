@@ -93,6 +93,7 @@ h1, .screen2 span {
     font-weight: 700;
     font-family: 'Recursive', sans-serif;
     color: #333333;
+    
 }
 .question {
     display: flex;
@@ -104,6 +105,61 @@ h1, .screen2 span {
     width: 300px;
     padding: 20px;
     margin-bottom: 40px;
+}
+
+.back-question {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 60vw;
+    height: 25vh;
+    padding: 10px;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 400;
+}
+
+.back-question img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 3%;
+    width: 8vw;
+    
+}
+
+.selection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    width: 55vw;
+    height: 15vh;
+    
+}
+.redAnswer, .orangeAnswer, .greenAnswer {
+    color: #FFFFFF;
+    width: 80px;
+    height: 8vh;
+    text-align: center;
+    font-size: 12px;
+    padding: 7px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redAnswer {
+    background-color: #FF3030;
+}
+
+.orangeAnswer {
+    background-color: #FF922E;
+}
+
+.greenAnswer {
+    background-color: #2FBE34;
 }
 
 ion-icon {
