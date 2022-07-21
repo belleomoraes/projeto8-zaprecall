@@ -11,7 +11,7 @@ export default function Answer() {
             Quase não lembrei
         </div>
         <div className="greenAnswer">
-            Zap
+            Zap!
         </div>
        </div>
        </div>

@@ -7,7 +7,7 @@ export default function Screen2() {
 return (
    <>
    <Head />
-   <Answer />
+   <Questions />
    <Counter />
    </>
 )
