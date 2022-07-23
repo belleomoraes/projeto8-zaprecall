@@ -1,3 +1,5 @@
+import Questions from "./Questions"
+
 export default function Counter() {
     return (
        <div className="counterControl">
