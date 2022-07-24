@@ -67,6 +67,7 @@ h1, .screen2 span {
 
 .counterControl {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
     background-color: #FFFFFF;
@@ -76,6 +77,7 @@ h1, .screen2 span {
     left: 0;
     width: 100%;
     padding: 10px;
+    z-index: 1;
 }
 
 .counterControl span {
@@ -179,4 +181,8 @@ h1, .screen2 span {
 }
 ion-icon {
     font-size: 30px;
+}
+
+.ions {
+    display: flex;
 }

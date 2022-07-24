@@ -47,22 +47,25 @@ const eachQuestion = [
 ];
 
 export default function Questions() {
+  const [counterControl, setCounterControl] = React.useState(0);
   
   function GetQuestion({ info }) {
     const [open, setOpen] = React.useState(true);
-    console.log(info);
+
     return (
       <>
-        <div className="questions">
-          {open ? (
-            <NumberQuestions info={info} setOpen={setOpen} open={open}/>
-          ) : (
-            <BackQuestions info = {info}/>
-          )}
-        </div>
+        {open ? (
+          <NumberQuestions info={info} setOpen={setOpen} open={open} />
+        ) : (
+          <BackQuestions
+            info={info}
+            setCounterControl={setCounterControl}
+            counterControl={counterControl}
+          />
+        )}
       </>
     );
   }
 
-  return eachQuestion.map((info) => <GetQuestion info={info} />);
+  return eachQuestion.map((info, index) => <GetQuestion key={index}info={info} />);
 }

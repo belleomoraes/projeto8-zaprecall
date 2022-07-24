@@ -1,9 +1,13 @@
-import Questions from "./Questions"
 
-export default function Counter() {
-    return (
+import React from "react";
+export default function Counter({ counterControl }) {
+
+   return (
        <div className="counterControl">
-        <span>0/4 CONCLUÍDOS</span>
+        <span>{counterControl}/8 CONCLUÍDOS</span>
+        <div className="ions">
+      
+        </div>
        </div>
     )
     
