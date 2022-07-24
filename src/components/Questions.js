@@ -46,22 +46,23 @@ const eachQuestion = [
   },
 ];
 
-export default function Questions({ open, setOpen }) {
-  const [start, setStart] = React.useState(true);
-  function NumberQuestion({ info }) {
+export default function Questions() {
+  
+  function GetQuestion({ info }) {
+    const [open, setOpen] = React.useState(true);
     console.log(info);
     return (
       <>
         <div className="questions">
           {open ? (
-            <NumberQuestions info={info} setOpen={setOpen} open={open} />
+            <NumberQuestions info={info} setOpen={setOpen} open={open}/>
           ) : (
-            <BackQuestions start={start} setStart = { setStart } info = {info}/>
+            <BackQuestions info = {info}/>
           )}
         </div>
       </>
     );
   }
 
-  return eachQuestion.map((info) => <NumberQuestion info={info} />);
+  return eachQuestion.map((info) => <GetQuestion info={info} />);
 }

@@ -6,4 +6,6 @@ export default function NumberQuestions({info, setOpen, open}) {
         <ion-icon name="play-outline" onClick={() => setOpen(!open)}></ion-icon>
       </div>
     )
-       }
+  
+    }
+

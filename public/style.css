@@ -163,9 +163,20 @@ h1, .screen2 span {
     background-color: #2FBE34;
 }
 
+.redChoice {
+    color: #FF3030;
+    text-decoration: line-through;
+}
+
+.orangeChoice {
+    color:#FF922E;
+    text-decoration: line-through;
+}
+
+.greenChoice {
+    color:  #2FBE34;
+    text-decoration: line-through;
+}
 ion-icon {
     font-size: 30px;
-}
-.escondido {
-    display: none;
 }
