@@ -1,16 +1,22 @@
 import React from "react";
-import Counter from "./Counter";
 
-export default function Answer({ info, counterControl, setCounterControl }) {
+export default function Answer({
+  info,
+  counterControl,
+  setCounterControl,
+  setResultIcons,
+  resultIcons,
+}) {
   const [click, setClick] = React.useState(true);
   const [choice, setChoice] = React.useState("controle");
   const [ion, setIon] = React.useState("ion");
-  
+
   function ClickAnswerRed() {
     setClick(!click);
     setIon("close-circle");
     setChoice("question redChoice");
     setCounterControl(counterControl + 1);
+    setResultIcons([...resultIcons, { icon: "close-circle", color: "redChoice" }]);
   }
 
   function ClickAnswerOrange() {
@@ -18,6 +24,7 @@ export default function Answer({ info, counterControl, setCounterControl }) {
     setIon("help-circle");
     setChoice("question orangeChoice");
     setCounterControl(counterControl + 1);
+    setResultIcons([...resultIcons, { icon: "help-circle", color: "orangeChoice" }]);
   }
 
   function ClickAnswerGreen() {
@@ -25,6 +32,7 @@ export default function Answer({ info, counterControl, setCounterControl }) {
     setIon("checkmark-circle");
     setChoice("question greenChoice");
     setCounterControl(counterControl + 1);
+    setResultIcons([...resultIcons, { icon: "checkmark-circle", color: "greenChoice" }]);
   }
 
   return (
@@ -52,7 +60,6 @@ export default function Answer({ info, counterControl, setCounterControl }) {
           </div>
         )}
       </div>
-      <Counter counterControl={counterControl} />
     </>
   );
 }

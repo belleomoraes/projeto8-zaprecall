@@ -6,6 +6,7 @@
 body {
     background-color: #FB6B6B;
     font-family: 'Righteous';
+    height: 200vh;
 }
 
 .screen1{
@@ -21,6 +22,12 @@ body {
 
 .screen1 img {
     width: 35%;
+}
+
+.screen1 h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    font-weight: 400;
 }
 
 h1, .screen2 span {
@@ -58,7 +65,6 @@ h1, .screen2 span {
     align-items: center; 
     padding: 5%;
     width: 100%;
-    margin-bottom: 20px;
 }
 
 .head img {
@@ -74,14 +80,14 @@ h1, .screen2 span {
     position: fixed;
     bottom: 0;
     right: 0;
-    left: 0;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     z-index: 1;
+    font-size: 16px;
 }
 
 .counterControl span {
-    font-size: 18px;
+    
     font-family: 'Recursive';
     color: #333333;
     font-weight: 400;
@@ -97,6 +103,7 @@ h1, .screen2 span {
     color: #333333;
     
 }
+
 .question {
     display: flex;
     justify-content: space-between;
@@ -106,7 +113,7 @@ h1, .screen2 span {
     border-radius: 5px;
     width: 300px;
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .back-question {
@@ -116,7 +123,7 @@ h1, .screen2 span {
     width: 60vw;
     height: 25vh;
     padding: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     position: relative;
     font-weight: 400;
 }
@@ -185,4 +192,30 @@ ion-icon {
 
 .ions {
     display: flex;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.result span {
+    font-weight: bold;
+}
+
+.result img {
+    margin-right: 10px;
+}
+.result h1 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Recursive';
+    color: #333333;
+}
+
+.result ion-icon {
+    font-size: 10px;
 }

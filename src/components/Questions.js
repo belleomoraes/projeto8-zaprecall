@@ -1,6 +1,7 @@
 import React from "react";
 import BackQuestions from "./BackQuestions";
 import NumberQuestions from "./NumberQuestions";
+import Counter from "./Counter";
 
 const eachQuestion = [
   {
@@ -48,24 +49,41 @@ const eachQuestion = [
 
 export default function Questions() {
   const [counterControl, setCounterControl] = React.useState(0);
-  
-  function GetQuestion({ info }) {
-    const [open, setOpen] = React.useState(true);
+  const [resultIcons, setResultIcons] = React.useState([]);
 
-    return (
-      <>
-        {open ? (
-          <NumberQuestions info={info} setOpen={setOpen} open={open} />
-        ) : (
-          <BackQuestions
-            info={info}
-            setCounterControl={setCounterControl}
-            counterControl={counterControl}
-          />
-        )}
-      </>
-    );
-  }
+  return (
+    <>
+      {eachQuestion.map((info, index) => (
+        <GetQuestion
+          key={index}
+          info={info}
+          setCounterControl={setCounterControl}
+          counterControl={counterControl}
+          resultIcons={resultIcons}
+          setResultIcons={setResultIcons}
+        />
+      ))}
+      <Counter counterControl={counterControl} resultIcons={resultIcons} />
+    </>
+  );
+}
 
-  return eachQuestion.map((info, index) => <GetQuestion key={index}info={info} />);
+function GetQuestion({ info, counterControl, setCounterControl, setResultIcons, resultIcons }) {
+  const [open, setOpen] = React.useState(true);
+
+  return (
+    <>
+      {open ? (
+        <NumberQuestions info={info} setOpen={setOpen} open={open} />
+      ) : (
+        <BackQuestions
+          info={info}
+          setCounterControl={setCounterControl}
+          counterControl={counterControl}
+          resultIcons={resultIcons}
+          setResultIcons={setResultIcons}
+        />
+      )}
+    </>
+  );
 }
