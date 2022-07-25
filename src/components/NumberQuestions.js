@@ -4,9 +4,9 @@ export default function NumberQuestions({info, setOpen, open}) {
     return (
       <>
       <div className="questions">
-        <div className="question">
+        <div className="question" onClick={() => setOpen(!open)}>
         <span>{info.number}</span>
-        <ion-icon name="play-outline" onClick={() => setOpen(!open)}></ion-icon>
+        <ion-icon name="play-outline" ></ion-icon>
       </div>
       </div>
       
