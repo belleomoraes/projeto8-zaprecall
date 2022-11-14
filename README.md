@@ -1,4 +1,4 @@
-# ZapRecall
+# Zap Recall
 
 This is a flashcard App. Flashcards are cards that contain a question/statement in front of you and an answer on the back. You can use them to improve your memory with Active Recall and Spaced Repetition methodologies. The idea is to read the question or statement and try to remember the answer. When faced with it, depending on the effort required to answer the flashcard or not, you become aware of which contents are fresh in your memory and which are not, so you can often practice the contents that are not.
 
